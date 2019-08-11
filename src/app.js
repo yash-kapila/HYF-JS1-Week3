@@ -1,6 +1,7 @@
 {
   /*
    * Q1.
+   * (Topic: Array sorting)
    * Write a program which would sort the below array in ascending order by name.
    * Hint: String.prototype.localeCompare()
    */
@@ -20,12 +21,14 @@
 
   /*
    * Q2.
+   * (Topic: Array iteration and conditional operations)
    * Write a function that accepts an array and returns only the even numbers in it.
    * For example, if the input array is [13, 1, 4, 6, 8, 3, 2, 2], the output array should be [4, 6, 8, 2, 2].
    */
 
   /* 
    * Q3.
+   * (Topic: Array iteration)
    * A class has 5 students defined below. Write a program to calculate average score of the class.
    * Note: The average should be restricted to 2 decimal places.
    */
@@ -48,6 +51,7 @@
 
   /*
    * Q4.
+   * (Topic: Unicode characters and Array iteration)
    * Write a JavaScript function which accept a string as argument and swaps the case of each character.
    * For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
    * Any character other than alphabets will stay as it is.
