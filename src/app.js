@@ -18,6 +18,10 @@
   }, {
     name: 'Stacie Dyar'
   }];
+  people.sort(function(a, b){
+    return a.name.localeCompare( b.name)
+  });
+  console.log(people);
 
   /*
    * Q2.
@@ -25,7 +29,18 @@
    * Write a function that accepts an array and returns only the even numbers in it.
    * For example, if the input array is [13, 1, 4, 6, 8, 3, 2, 2], the output array should be [4, 6, 8, 2, 2].
    */
-
+  const arr = [13, 1, 4, 6, 8, 3, 2, 2];
+  let newArr = [];
+  function myNum() {
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] % 2 === 0){
+        newArr.push(arr[i]);
+      }
+    }
+    return newArr;
+  }
+  console.log(myNum());
+  // console.log(arr[n]);
   /* 
    * Q3.
    * (Topic: Array iteration)
@@ -48,6 +63,16 @@
     name: 'Student 5',
     score: 96
   }];
+  let sum = 0 ;
+  function average(){
+    for(i = 0; i < students.length; i++){
+      sum = sum + students[i].score;
+    }
+    const scoreAverage = ( sum / students.length ).toFixed(2);
+    // const scoreAverage = ( sum / i ).toFixed(2);  //  worked
+    return scoreAverage;
+  }
+  console.log(average());
 
   /*
    * Q4.
@@ -57,4 +82,17 @@
    * Any character other than alphabets will stay as it is.
    * Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
    */
+  let input = 'The Quick Brown Fox';
+  let inputArr = input.split("");
+  function char(){
+    for (let a = 0; a < inputArr.length; a++){
+      if (inputArr[a] === inputArr[a].toUpperCase()){
+        inputArr[a] = inputArr[a].toLowerCase();
+      } else if (inputArr[a] === inputArr[a].toLowerCase()) {
+        inputArr[a] = inputArr[a].toUpperCase();
+      }
+    }
+    return inputArr.join("");
+  }
+  console.log(char());
 }
